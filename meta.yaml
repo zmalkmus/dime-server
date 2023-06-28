@@ -1,0 +1,27 @@
+package:
+    name: dime-server
+    version: "0.0.1"
+source:
+    git_url: https://github.com/zmalkmus/dime-server.git
+requirements:
+    build:
+        - make
+    host:
+        - {{ compiler('c') }}
+        - python
+        - autoconf
+        - libtool
+        - setuptools
+        - zlib
+        - openssl
+        - jansson
+
+    run:
+        - python
+        - zlib
+        - openssl
+        - jansson
+about:
+  home: https://github.com/CURENT/dime
+  license: GPL-3.0
+  summary: LTB DiME - Distributed Messaging Environment for CURENT Large-scale Testbed
