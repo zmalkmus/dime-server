@@ -6,18 +6,15 @@ source:
 requirements:
     build:
         - make
-    host:
         - {{ compiler('c') }}
-        - python
+    host:
         - autoconf
         - libtool
         - setuptools
         - zlib
         - openssl
         - jansson
-
     run:
-        - python
         - zlib
         - openssl
         - jansson
