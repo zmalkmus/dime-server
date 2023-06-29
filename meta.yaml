@@ -14,6 +14,7 @@ requirements:
         - zlib
         - openssl
         - jansson
+        - libev
     run:
         - zlib
         - openssl
