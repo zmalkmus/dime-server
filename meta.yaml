@@ -7,16 +7,24 @@ requirements:
     build:
         - make
         - gcc
+        - gnuconfig
+        - automake
+        - autoconf
+        - libtool
+        - cmake
         - {{ compiler('c') }}
+        - jansson >=2.14
+        - openssl
+        - zlib
+        - libev >=4.24
     host:
         - libtool
-        - setuptools
         - zlib
         - openssl
-        - jansson >=2.14
-        - libev
+        - jansson >=2.13
+        - libev >=4.24
     run:
-        - libev
+        - libev >=4.24
         - zlib
         - openssl
         - jansson >=2.14
