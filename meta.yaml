@@ -6,19 +6,20 @@ source:
 requirements:
     build:
         - make
+        - gcc
         - {{ compiler('c') }}
     host:
-        - autoconf
         - libtool
         - setuptools
         - zlib
         - openssl
-        - jansson
+        - jansson >=2.14
         - libev
     run:
+        - libev
         - zlib
         - openssl
-        - jansson
+        - jansson >=2.14
 about:
   home: https://github.com/CURENT/dime
   license: GPL-3.0
